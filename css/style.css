@@ -1,31 +1,43 @@
+.body {
+    background-color: #8E5E48;
+    color: #8e5e48;
+    margin: 0%;
+}
 .grid {
+    background-color: #8E5E48;
     display: grid;
     margin-top: 16px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "logo" 
-    "nav"
-    "intro"
-    "project1intro"
-    "project1"
-    "project2intro" 
-    "project2"
-    "project3intro" 
-    "project3"
-    "footer";
+    "logo nav"
+    "intro intro"
+    "project1intro project1intro"
+    "project1 project1"
+    "project2intro project2intro" 
+    "project2 project2"
+    "project3intro project3intro" 
+    "project3 project3"
+    "footer footer";
 }
 .logo {
     grid-area: logo;
     margin: 16px;
+    margin-top: 50px;
 }
 .name {
     grid-area: name;
     margin: 16px;
     align-items: center;
+    display: none;
 }
 .nav {
     grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin: 16px;
+    margin-top: 50px;
 }
 .intro {
     grid-area: intro;
@@ -33,6 +45,10 @@
     display: flex;
     flex-direction: column;
     flex-flow:column
+}
+.intro h1 {
+    font-size: 50px;
+    color: #271311;
 }
 .project1 {
     grid-area: project1;
@@ -78,11 +94,9 @@
     align-items: center;
     font-size: 32px;
 }
-.h1 {
-    font-size: 50px;
-}
 .p {
     font-size: 22px;
+    color: #271311;
     display: none;
     flex-wrap: wrap;
 }
@@ -90,13 +104,18 @@
     font-size: 25px;
 }
 .h2 {
-    font: size 50px;;
+    font: size 50px;
+    color: #271311;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 16px;
 }
 .email, .LinkedIn, .Resume {
     text-decoration: none;
+    color: #271311;
 }
 
-@media  only screen and (min-width:600px) {
+@media  only screen and (min-width:900px) {
     .grid {
         display: grid;
         margin: 16px;
@@ -128,4 +147,17 @@
         font-size: 22px;
         display: flex;
         flex-wrap: wrap;
+}
+.nav {
+    grid-area: nav;
+    margin: 16px;
+    margin-top: 50px;
+}
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-end;
+    font-size: 32px;
 }
