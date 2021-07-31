@@ -59,6 +59,9 @@
     grid-area: project1intro;
     display: flex;
 }
+.project1intro h2 {
+    font-size: 50px;
+}
 .project2 {
     grid-area: project2;
     margin-left: 16px;
