@@ -1,0 +1,131 @@
+.grid {
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo" 
+    "nav"
+    "intro"
+    "project1intro"
+    "project1"
+    "project2intro" 
+    "project2"
+    "project3intro" 
+    "project3"
+    "footer";
+}
+.logo {
+    grid-area: logo;
+    margin: 16px;
+}
+.name {
+    grid-area: name;
+    margin: 16px;
+    align-items: center;
+}
+.nav {
+    grid-area: nav;
+    margin: 16px;
+}
+.intro {
+    grid-area: intro;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-flow:column
+}
+.project1 {
+    grid-area: project1;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    display: flex;
+}
+.project1intro {
+    grid-area: project1intro;
+    display: flex;
+}
+.project2 {
+    grid-area: project2;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    display: flex;
+}
+.project2intro {
+    grid-area: project2intro;
+    display: flex;
+}
+.project3 { 
+    grid-area: project3;
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+.project3intro {
+    grid-area: project3intro;
+    display: flex;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    justify-content: space-between;
+}
+.ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 32px;
+}
+.h1 {
+    font-size: 50px;
+}
+.p {
+    font-size: 22px;
+    display: none;
+    flex-wrap: wrap;
+}
+.p1 {
+    font-size: 25px;
+}
+.h2 {
+    font: size 50px;;
+}
+.email, .LinkedIn, .Resume {
+    text-decoration: none;
+}
+
+@media  only screen and (min-width:600px) {
+    .grid {
+        display: grid;
+        margin: 16px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo . nav"
+        "intro intro intro"
+        "project1 project1 project1intro"
+        "project2intro project2 project2"
+        "project3 project3 project3intro"
+        "footer footer footer";
+    }
+    .ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: flex-start;
+        font-size: 32px;
+    }
+    .footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        margin: 100px;
+        justify-content: space-between;
+    }
+    .p {
+        font-size: 22px;
+        display: flex;
+        flex-wrap: wrap;
+}
