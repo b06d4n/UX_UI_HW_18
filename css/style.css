@@ -1,10 +1,9 @@
 .body {
-    background-color: #8E5E48;
-    color: #8e5e48;
-    margin: 0%;
+    background-color: #E8DFDA;
+    color: #E8DFDA;
 }
 .grid {
-    background-color: #8E5E48;
+    background-color: #E8DFDA;
     display: grid;
     margin-top: 16px;
     grid-template-columns: 1fr 1fr;
