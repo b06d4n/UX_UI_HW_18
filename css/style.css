@@ -93,6 +93,9 @@
     align-items: center;
     font-size: 32px;
 }
+.li {
+    padding: 8px;
+}
 .p {
     font-size: 22px;
     color: #271311;
